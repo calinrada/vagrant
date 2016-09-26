@@ -243,5 +243,5 @@ echo -e
 echo -e "Then follow the README.md to copy/paste the VirtualHost!\n"
 
 echo -e "----------------------------------------"
-echo -e "Default Site: http://192.168.50.4"
+echo -e "Default Site: http://192.168.33.11"
 echo -e "----------------------------------------"

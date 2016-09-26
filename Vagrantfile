@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Connect to IP
   # Note: Use an IP that doesn't conflict with any OS's DHCP (Below is a safe bet)
   # --------------------
-  config.vm.network :private_network, ip: "192.168.50.4"
+  config.vm.network :private_network, ip: "192.168.33.11"
 
   # Forward to Port
   # --------------------
@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider :virtualbox do |vb|
     vb.customize [
       "modifyvm", :id,
-      "--memory", 512,             # How much RAM to give the VM (in MB)
+      "--memory", 1024,             # How much RAM to give the VM (in MB)
       "--cpus", 1,                 # Muli-core in the VM
       "--ioapic", "on",
       "--natdnshostresolver1", "on",
